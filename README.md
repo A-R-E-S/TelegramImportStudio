@@ -138,16 +138,6 @@ python main.py
 
 Автор не несёт ответственности за нарушение правил Telegram, блокировки аккаунтов, потерю данных или неправильное использование API. Используя программу, ты принимаешь риски на себя.
 
----
-
-## 📈 Star History
-
-<a href="https://star-history.com/#A-R-E-S/TelegramImportStudio&Date">
-  <img src="https://api.star-history.com/svg?repos=A-R-E-S/TelegramImportStudio&type=Date" alt="Star History Chart" width="620"/>
-</a>
-
----
-
 ## 📄 Лицензия
 
 Проект распространяется под лицензией [MIT](LICENSE).
