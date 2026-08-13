@@ -17,7 +17,6 @@
 [![Views](https://komarev.com/ghp/?username=A-R-E-S&color=blueviolet&label=Views)](https://github.com/A-R-E-S)
 
 [![Release](https://img.shields.io/github/v/release/A-R-E-S/TelegramImportStudio?include_prereleases&label=Release&logo=github&style=flat-square)](https://github.com/A-R-E-S/TelegramImportStudio/releases)
-[![Downloads](https://img.shields.io/github/downloads/A-R-E-S/TelegramImportStudio/total?label=Downloads&logo=github&style=flat-square&color=2ea44f)](https://github.com/A-R-E-S/TelegramImportStudio/releases)
 [![VirusTotal](https://img.shields.io/badge/VirusTotal-Отчёт-3975ff?style=flat-square&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/399958769a517c1bf079cce78270f1d7bc42aad9249a482e173b84f16893db32?nocache=1)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Flet](https://img.shields.io/badge/Flet-0.25+-7c4dff?style=flat-square&logo=flutter&logoColor=white)](https://flet.dev/)
