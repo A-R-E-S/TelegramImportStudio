@@ -30,7 +30,7 @@
 ## 🎬 Как выглядит импортированная история
 
 <p align="center">
-  <img src="assets/demo.gif" width="820" alt="Импортированные сообщения в Telegram"/>
+  <img src="assets/demo.gif" width="410" alt="Импортированные сообщения в Telegram"/>
 </p>
 
 ---
@@ -75,13 +75,88 @@
 
 ---
 
-## 🔄 Как это работает
+🛡️ Безопасность
 
-```mermaid
-graph LR
-    A[Telegram Desktop<br/>HTML-экспорт] --> B[📦 Конвертер]
-    B --> C[messages*.json]
-    C --> D[🔗 Слияние]
-    D --> E[result.json]
-    E --> F[📤 Импорт<br/>Telethon]
-    F --> G[💬 История в Telegram]
+    Приложение работает полностью локально: бэкап, API-данные и сессия
+    никуда не отправляются, кроме серверов Telegram.
+    Релиз просканирован на VirusTotal — отчёт по ссылке в бейдже в шапке страницы.
+## 🚀 Запуск из исходников
+
+### Требования
+
+- Windows 10/11 x64
+- Python 3.10+
+
+### Шаги
+
+```bash
+git clone https://github.com/A-R-E-S/TelegramImportStudio.git
+cd TelegramImportStudio
+
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux / macOS:
+# source .venv/bin/activate
+
+pip install -r requirements.txt
+python main.py
+```
+
+## 🔑 Как получить API ID и API Hash
+
+1. Зайди на сайт [my.telegram.org](https://my.telegram.org).
+2. Войди по своему номеру телефона.
+3. Открой раздел **API development tools**.
+4. Скопируй `api_id` и `api_hash` в соответствующие поля на экране «Импорт» в приложении.
+
+> 💡 Данные сохраняются локально в файле `settings.json` и никуда не отправляются.
+
+## ❓ Частые вопросы
+
+**Где взять Chat ID?**  
+Через бота [@userinfobot](https://t.me/userinfobot) или [@getidsbot](https://t.me/getidsbot) в Telegram.
+
+**Где взять user_id для sender_map?**  
+Через бота [@userinfobot](https://t.me/userinfobot).
+
+**Почему антивирус ругается на .exe?**  
+Это ложное срабатывание на упаковку PyInstaller. Сверь SHA256 и посмотри отчёт VirusTotal выше.
+
+**Что делает тестовый режим?**  
+Проходит весь путь (подготовка, авторизация, загрузка медиа), но не запускает финальный импорт истории.
+
+**Что будет, если во время импорта пропадёт интернет?**  
+Часть файлов может не загрузиться — они будут помечены как ошибки в консоли. Импорт можно запустить повторно: пропущенные сообщения отправятся заново.
+
+**Где хранится сессия Telegram?**  
+В файле `telegram_import_gui.session` рядом с запущенным `.exe` (или рядом с `main.py`, если запускаешь из исходников).
+
+## ⚠️ Дисклеймер
+
+Проект предназначен для работы **с собственными данными и собственными аккаунтами**.
+
+Автор не несёт ответственности за нарушение правил Telegram, блокировки аккаунтов, потерю данных или неправильное использование API. Используя программу, ты принимаешь риски на себя.
+
+---
+
+## 📈 Star History
+
+<a href="https://star-history.com/#A-R-E-S/TelegramImportStudio&Date">
+  <img src="https://api.star-history.com/svg?repos=A-R-E-S/TelegramImportStudio&type=Date" alt="Star History Chart" width="620"/>
+</a>
+
+---
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией [MIT](LICENSE).
+
+---
+
+<div align="center">
+
+### Если проект оказался полезным — поставь ⭐
+Это реально помогает развитию проекта!
+
+</div>
