@@ -1,4 +1,4 @@
-[🇷🇺 Русский](README.md) • [🇬🇧 English](README_EN.md)
+[🇷🇺 Русский](README.md) • [🇬 English](README_EN.md)
 
 <div align="center">
 
@@ -12,13 +12,13 @@
 
 <br>
 
-[![Stars](https://img.shields.io/github/stars/A-R-E-S/telegram-import-gui?style=social)](https://github.com/A-R-E-S/telegram-import-gui/stargazers)
-[![Forks](https://img.shields.io/github/forks/A-R-E-S/telegram-import-gui?style=social)](https://github.com/A-R-E-S/telegram-import-gui/network/members)
+[![Stars](https://img.shields.io/github/stars/A-R-E-S/TelegramImportStudio?style=social)](https://github.com/A-R-E-S/TelegramImportStudio/stargazers)
+[![Forks](https://img.shields.io/github/forks/A-R-E-S/TelegramImportStudio?style=social)](https://github.com/A-R-E-S/TelegramImportStudio/network/members)
 [![Views](https://komarev.com/ghp/?username=A-R-E-S&color=blueviolet&label=Views)](https://github.com/A-R-E-S)
 
-[![Release](https://img.shields.io/github/v/release/A-R-E-S/telegram-import-gui?include_prereleases&label=Release&logo=github&style=flat-square)](https://github.com/A-R-E-S/telegram-import-gui/releases)
-[![Downloads](https://img.shields.io/github/downloads/A-R-E-S/telegram-import-gui/total?label=Downloads&logo=github&style=flat-square&color=2ea44f)](https://github.com/A-R-E-S/telegram-import-gui/releases)
-[![VirusTotal](https://img.shields.io/badge/VirusTotal-Отчёт-3975ff?style=flat-square&logo=virustotal&logoColor=white)](VT_REPORT_URL)
+[![Release](https://img.shields.io/github/v/release/A-R-E-S/TelegramImportStudio?include_prereleases&label=Release&logo=github&style=flat-square)](https://github.com/A-R-E-S/TelegramImportStudio/releases)
+[![Downloads](https://img.shields.io/github/downloads/A-R-E-S/TelegramImportStudio/total?label=Downloads&logo=github&style=flat-square&color=2ea44f)](https://github.com/A-R-E-S/TelegramImportStudio/releases)
+[![VirusTotal](https://img.shields.io/badge/VirusTotal-Отчёт-3975ff?style=flat-square&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/399958769a517c1bf079cce78270f1d7bc42aad9249a482e173b84f16893db32?nocache=1)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Flet](https://img.shields.io/badge/Flet-0.25+-7c4dff?style=flat-square&logo=flutter&logoColor=white)](https://flet.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
@@ -38,7 +38,7 @@
 ## 📥 Скачать
 
 <p align="center">
-  <a href="https://github.com/A-R-E-S/telegram-import-gui/releases/latest">
+  <a href="https://github.com/A-R-E-S/TelegramImportStudio/releases/latest">
     <img src="https://img.shields.io/badge/⬇_СКАЧАТЬ_ДЛЯ_WINDOWS-2ea44f?style=for-the-badge&logo=windows&logoColor=white" alt="Скачать для Windows"/>
   </a>
 </p>
@@ -54,10 +54,15 @@
 - 📦 Конвертация HTML-экспорта Telegram Desktop в JSON
 - 🔗 Слияние `messages.json`, `messages2.json`, … в один `result.json`
 - 📤 Импорт истории в Telegram через Telethon
-- 🖼️ Фото, видео, кружки, голосовые, стикеры, документы, геолокация, опросы, звонки, пины, форварды
-- 🌍 Интерфейс: RU / EN / ES / DE / FR
+  (CheckHistoryImport → Init → UploadMedia → Start)
+- 🖼️ Поддержка всех типов контента:
+  текст с форматированием, фото, видео, «кружки», голосовые, стикеры
+  (`.webp` / `.tgs` / `.webm`), GIF, документы, геолокация, опросы,
+  контакты, звонки, закреплённые сообщения, пересланные сообщения, ответы
+- 🌍 Интерфейс: **RU / EN / ES / DE / FR**
 - 🔐 Вход по коду из Telegram/SMS и паролю 2FA прямо в GUI
 - 🧪 Тестовый режим и импорт только первых N сообщений
+- 👥 Карта отправителей (sender_map): имена из бэкапа → реальные user_id
 - 📊 Прогресс-бары и встроенная консоль выполнения
 
 ---
